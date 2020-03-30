@@ -4,13 +4,7 @@ This repository contains the code used in the the paper:
 
 > G. Baggio, D. S. Bassett, F. Pasqualetti "Data-Driven Control of Complex Networks", In preparation, 2020. 
 
-In particular:
-
-- The folder `AAA` contains
-
-- The folder `BBB` contains
-
-- The folder `CCC` contains
+[TO BE UPLOADED SOON]
 
 ***
 
