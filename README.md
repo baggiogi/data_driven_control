@@ -8,7 +8,7 @@ This repository contains the code used in the the paper:
 
 - The folder `fMRI` contains the code for computing optimal data-driven controls from task-based fMRI data.
 
-- The folder `power_grid` contains the code for computing optimal data-driven controls from fault recovery in power grid networks.
+- The folder `power grid` contains the code for computing optimal data-driven controls from fault recovery in power grid networks.
 
 ***
 
