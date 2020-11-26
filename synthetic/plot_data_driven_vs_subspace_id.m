@@ -45,7 +45,7 @@ for n = int_n
         [bins,binsize] = conncomp(G);
         
         % ensure that the E-R graph is always connected & controllable
-        while min(svd(C_o))<1e-14 && length(binsize)>1
+        while min(svd(C_o))<1e-10 && length(binsize)>1
             
             % adjacency matrix E-R graph
             A = randomgraph(n,log(n)/n+epsilon);

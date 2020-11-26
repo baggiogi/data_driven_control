@@ -26,6 +26,8 @@ function [u_opt,norm_u,err] = data_driven_min_energy(U,Y,sys,T,yf)
 n = size(sys.A,1);
 % number of inputs
 m = size(sys.B,2);
+% number of outputs
+p = size(sys.C,1);
 
 % compute (output) controllability matrix
 C_o = zeros(n,m*T);
@@ -41,7 +43,11 @@ end
 C_o = sys.C*C_o;
 
 % data-driven control
-u_opt = pinv(Y*pinv(U,1e-8),1e-8)*yf;
+K = null(Y);
+[W,S,V]=svds(U*K,m*T-p);
+
+% data-driven control
+u_opt = U*pinv(Y,1e-8)*yf-U*K*pinv(W*S*V')*U*pinv(Y,1e-8)*yf;
 
 % error on final state
 err = norm(yf - C_o*u_opt);
