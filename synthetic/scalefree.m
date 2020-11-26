@@ -56,3 +56,5 @@ second = edges(2:2:end);
 final = sparse([first;second], [second;first], ones(2*nEdges, 1), n, n);
 
 end 
+
+%------------- END OF CODE --------------
