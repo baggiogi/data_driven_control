@@ -1,4 +1,4 @@
-# Data-Driven Control of Networks
+# Data-Driven Control of Complex Networks
 
 This repository contains the code used in the the paper:
 
